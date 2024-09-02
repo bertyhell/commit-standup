@@ -51,7 +51,7 @@ async function printLogs() {
 	 * Describe the command line interface with --help option
 	 */
 	const parsedArguments = await yargs(argv)
-			.scriptName('git-weekly')
+			.scriptName('commit-standup')
 			.usage('Usage: $0 [options]')
 			.command('$0', 'Get your commit history across repositories for the last 7 days.')
 			.example([

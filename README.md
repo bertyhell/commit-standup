@@ -1,15 +1,15 @@
-# git-weekly
+# commit-standup
 
-`git-weekly` is a command-line tool to get your commit history across multiple git repositories for the last few days.
+`commit-standup` is a command-line tool to get your commit history across multiple git repositories for the last few days.
 
 ## Usage
 
 ```sh
-git-weekly
+commit-standup
 ```
 With custom options:
 ```sh
-git-weekly --days 3 --folder ./my-repos
+commit-standup --days 3 --folder ./my-repos
 ```
 This outputs the last 7 days of commits made by you for all git repositories in the current folder.
 Example output
@@ -73,26 +73,26 @@ Mon Aug 26 2024
 
 - Run the command with all defaults, using the current folder and go back 7 days:
   ```sh
-  git-weekly
+  commit-standup
   ```
 
 - Search in the folder `my-repos` and go back 1 day:
   ```sh
-  git-weekly --days 1 --folder ./my-repos
+  commit-standup --days 1 --folder ./my-repos
   ```
 
 ## Description
 
-`git-weekly` will search for git repositories within the specified folder (or the current working directory by default) and print the commit history for the specified number of days. It will display the commit messages for each day, grouped by repository.
+`commit-standup` will search for git repositories within the specified folder (or the current working directory by default) and print the commit history for the specified number of days. It will display the commit messages for each day, grouped by repository.
 
 ## Installation
 
 Run it directly with npx
 ```sh
-npx git-weekly
+npx commit-standup
 ```
 
 Or install it globally with npm
 ```sh
-npm install -g git-weekly
+npm install -g commit-standup
 ```
