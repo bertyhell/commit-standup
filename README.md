@@ -65,7 +65,7 @@ Mon Aug 26 2024
 
 - `--days`, `-d`: The number of days to go back in time (default: 7)
 - `--folder`, `-f`: The base directory to search for git repositories (default: current working directory)
-- `--ignore`, `-i`: A comma-separated list of directories to ignore while searching for .git repo folders (default: ['node_modules/**', 'dist/**'])
+- `--ignore`, `-i`: A comma-separated list of directories to ignore while searching for .git repo folders (default: [`node_modules/**`, `dist/**`])
 - `--depth`, `-p`: The depth of the search for .git repositories (default: 3)
 - `--help`, `-h`: Show help information
 
@@ -78,7 +78,7 @@ Mon Aug 26 2024
 
 - Search in the folder `my-repos` and go back 1 day:
   ```sh
-  commit-standup --days 1 --folder ./my-repos
+  commit-standup --days 1 --folder ./my-repos --depth 5 --ignore node_modules/** --ignore dist/**
   ```
 
 ## Description
