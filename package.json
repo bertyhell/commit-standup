@@ -4,13 +4,10 @@
   "version": "0.4.1",
   "type": "module",
   "main": "dist/main.js",
-  "bin": {
-    "commit-standup": "node dist/main.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bertyhell/commit-standup.git"
-  },
+  "bin": "./dist/main.js",
+  "repository": "https://github.com/bertyhell/commit-standup",
+  "homepage": "https://github.com/bertyhell/commit-standup",
+  "author": "Bert Verhelst",
   "scripts": {
     "dev": "tsx ./src/main.ts --folder ../ --ignore node_modules/** --ignore dist/**",
     "help": "tsx ./src/main.ts --help",
