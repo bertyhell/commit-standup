@@ -7,10 +7,6 @@
 ```sh
 commit-standup
 ```
-With custom options:
-```sh
-commit-standup --days 3 --folder ./my-repos
-```
 This outputs the last 7 days of commits made by you for all git repositories in the current folder.
 Example output
 ```
@@ -78,12 +74,12 @@ Mon Aug 26 2024
 
 - Search in the folder `my-repos` and go back 1 day:
   ```sh
-  commit-standup --days 1 --folder ./my-repos --depth 5 --ignore node_modules/** --ignore dist/**
+  commit-standup --days 3 --folder ./my-repos --depth 5 --ignore node_modules/** --ignore dist/**
   ```
 
 ## Description
 
-`commit-standup` will search for git repositories within the specified folder (or the current working directory by default) and print the commit history for the specified number of days. It will display the commit messages for each day, grouped by repository.
+`commit-standup` will recursively search for git repositories within the specified folder (or the current working directory by default) and print the commit history for the specified number of days. It will display the commit messages for each day, grouped by repository.
 
 ## Installation
 

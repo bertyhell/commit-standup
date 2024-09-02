@@ -4,3 +4,4 @@ README.md
 tsconfig.json
 .idea/
 .vscode/
+!dist/
