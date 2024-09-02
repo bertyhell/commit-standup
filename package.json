@@ -1,0 +1,23 @@
+{
+  "name": "gitstandup",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsx ./src/main.ts --folder ../ --ignore node_modules/** --ignore dist/**",
+    "help": "tsx ./src/main.ts --help",
+    "version": "tsx ./src/main.ts --version",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "@types/yargs": "^17.0.33",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "yargs": "^17.7.2"
+  }
+}
