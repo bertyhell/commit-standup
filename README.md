@@ -72,7 +72,7 @@ Mon Aug 26 2024
   commit-standup
   ```
 
-- Search in the folder `my-repos` and go back 1 day:
+- Search in the folder `my-repos` and go back 3 days, search 5 folder levels deep for git repos and ignore node_modules and dist folders
   ```sh
   commit-standup --days 3 --folder ./my-repos --depth 5 --ignore node_modules/** --ignore dist/**
   ```
