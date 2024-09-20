@@ -20,7 +20,7 @@ function findGitFolderPaths(dir: string, depth: number, ignore: string[]): strin
 }
 
 async function getGitLogs(folder: string, userName: string, daysAgo: number): Promise<string> {
-	const command = `git log --author="${userName}" --since="${daysAgo} days ago 00:00" --until="${daysAgo} days ago 23:59" --pretty=format:"%s"`;
+	const command = `git log --all --author="${userName}" --since="${daysAgo} days ago 00:00" --until="${daysAgo} days ago 23:59" --pretty=format:"%s"`;
 	const { stdout } = await execAsync(command, { cwd: folder });
 	return stdout.trim();
 }
