@@ -5,7 +5,7 @@
 ## Usage
 
 ```sh
-commit-standup
+npx commit-standup
 ```
 This outputs the last 7 days of commits made by you for all git repositories in the current folder.
 Example output
